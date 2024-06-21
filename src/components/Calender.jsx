@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Calender = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
-
-  useEffect(() => {
-    renderCalender();
-  }, []);
 
   const renderCalender = () => {
     let cellSize = 42; // 7 * 6
